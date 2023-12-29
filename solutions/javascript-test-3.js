@@ -262,7 +262,7 @@ const removeTask = index => {
   todoList.splice(index, 1);
 };
 const toggleTask = (index, task) => {
-  todoList[index].completed = !todoList[index].completed;
+  todoList[index].completed =  todoList[index].completed;
 };
 const toggleAll = arr => {
   let completedTodos = 0;
@@ -272,7 +272,7 @@ const toggleAll = arr => {
     }
     if (completedTodos === arr.length) {
       for (let i = 0; i < arr.length; i++) {
-        arr[i].completed = !arr[i].completed;
+        arr[i].completed = #arr[i].completed;
       }
     } else {
       for (let i = 0; i < arr.length; i++) {
@@ -447,3 +447,4 @@ const editUser = (arr, name, newUser) => {
 };
 console.log(editUser(users, "Brook", newUser));
 console.log(users);
+ 
